@@ -7,118 +7,85 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="page1">
+    <header id="navbartop">
+  <button id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="topbuttons" aria-expanded="false">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+  </button>
+  <a id="toplogoheader" href="#page1" aria-label="React home">
+    <img src="./logo_light.svg" alt="" width="40" height="40">
+    <span class="brand-name">React</span><span class="brand-version">v19.2</span>
+  </a>
+  <div id="topsearch" role="search">
+    <svg class="searchlogo" width="20" height="20" viewbox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="1.8"></circle><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></svg>
+    <input class="navbarsearch" type="search" placeholder="Search" aria-label="Search">
+  </div>
+  <nav id="topbuttons" aria-label="Main navigation">
+    <a class="navbar-link" href="#page2">Learn</a>
+    <a class="navbar-link" href="#page3">Reference</a>
+    <a class="navbar-link" href="#page8">Community</a>
+    <a class="navbar-link" href="#page7">Blog</a>
+  </nav>
+  <div id="navbaricons" aria-label="Site icons">
+    <span class="topmoon"><img src="./moon.png" alt="Theme" width="24" height="24"></span>
+    <span class="toptranslater"><img src="./translater.png" alt="Languages" width="22" height="22"></span>
+    <span class="topbili"><img src="./bili%20logo.png" alt="GitHub" width="20" height="20"></span>
+  </div>
+</header><div id="page1">
         
-        <div id="navbartop">
-
-            <div id="toplogoheader">
-                <div class="threelines-responsive">
-                    <img src="./three lines.png" alt="" width="16px" height="16px">
-                </div>
-                <div class="toplogo">
-                    <img src="./logo_light.svg" alt="" width="40px" height="40px">
-                </div>
-                <div class="reactlogotext">
-                    <img src="./react-wordmark.png" alt="" width="95px" height="16px">
-                </div>
-                <div class="vnum-responsive">
-                    <img src="./v19.2.png" alt="" width="50px" height="16px">
-                </div>
-            </div>
-            <div id="topsearch">
-                <input class="navbarsearch" type="text" placeholder="           Search">
-                <img class="searchlogo" src="./search-893.png" alt="" width="20px" height="20px">
-            </div>
-            <div id="topbuttons">
-                <button class="navbarbutton1">Learn</button>
-                <button class="navbarbutton2">Reference</button>
-                <button class="navbarbutton3">Community</button>
-                <button class="navbarbutton4">Blog</button>
-            </div>
-            <div id="navbaricons">
-                <div class="topmoon">
-                    <img src="./moon.png" alt="" width="24px" height="24px">
-                </div>
-                <div class="toptranslater">
-                    <img src="./translater.png" alt="" width="22px" height="22px">
-                </div>
-                <div class="topbili">
-                    <img src="./bili logo.png" alt="" width="20px" height="20px">
-                </div>
-            </div>
-
-        </div>
-
         <div id="page1main">
-            <img src="./logo_light.svg" alt="logo" height="112px" width="112px" >
+            <img src="./logo_light.svg" alt="logo" height="112px" width="112px">
             <h1 class="pageh1">React</h1>
             <p class="page1ptext">The library for web and native user interfaces</p>
 
             <div id="header1buttons">
-                <button id="headbutton1">Learn React</button>
-                <button id="headbutton2">API Reference</button>
+                <button id="headbutton1" class="pill-button" type="button">Learn React</button>
+                <button id="headbutton2" class="pill-button" type="button">API Reference</button>
             </div>
         </div>
 
     </div>
-    <div id="page2">
+    <div id="page2" class="content-section">
       
         <div id="page2header1">
             <h1 class="page2h1">Create user interfaces <br> from components</h1>
-            <p class="page2ptext">React lets you build user interfaces out of individual pieces called components. <br> Create your own React components like Thumbnail, LikeButton, and Video. <br> Then combine them into entire screens, pages, and apps.</p>
+            <p class="page2ptext">React lets you build user interfaces out of individual pieces called components. <br>  Create your own React components like Thumbnail, LikeButton, and Video. <br>  Then combine them into entire screens, pages, and apps.</p>
        </div>
        <div id="page2boxsheader">
-            <div id="page2boxs">
-                <div id="page2box1header">
+            <div id="page2boxs" class="example-pair">
+                <div id="page2box1header" class="code-panel">
                     
-                    <div class="page2box1p1">
+                    <div class="page2box1p1 code-title">
                         <span>video.js</span>
                     </div>
                     
-                    <div class="page2box1p2">
-
-                        function &nbsp;&nbsp; Video &nbsp;&nbsp;({ &nbsp;&nbsp; video &nbsp;&nbsp; }) &nbsp;&nbsp;{ <br>
-
-                         &nbsp;&nbsp;&nbsp;&nbsp; return &nbsp;&nbsp; ( <br>
-
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; div &nbsp;&nbsp; &gt; <br>
-
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; Thumbnail &nbsp;&nbsp; video &nbsp;&nbsp;= &nbsp;&nbsp;{ &nbsp;&nbsp; video &nbsp;&nbsp; } &nbsp;&nbsp; /&gt; <br>
-
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; a &nbsp;&nbsp; href &nbsp;&nbsp; = &nbsp;&nbsp;{&nbsp;&nbsp; video.url &nbsp;&nbsp;} &nbsp;&nbsp; &gt; <br>
-
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; h3 &nbsp;&nbsp; &gt; &nbsp;&nbsp; { &nbsp;&nbsp; video.title &nbsp;&nbsp; } &nbsp;&nbsp; &lt; &nbsp;&nbsp; /h3 &nbsp;&nbsp;&gt; <br>
-
-                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; p &nbsp;&nbsp; &gt; &nbsp;&nbsp; { &nbsp;&nbsp; video.description &nbsp;&nbsp; } &nbsp;&nbsp; &lt; &nbsp;&nbsp; /p &nbsp;&nbsp;  &gt; <br>
-
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; /a &nbsp;&nbsp; &gt; <br>
-
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; LikeButton &nbsp;&nbsp; video &nbsp;&nbsp;=&nbsp;&nbsp; { &nbsp;&nbsp; video &nbsp;&nbsp; } &nbsp;&nbsp; /  &nbsp;&nbsp; &gt; <br>
-
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp;/div &nbsp;&nbsp; &gt; <br>
-
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ); <br>
-
-                        &nbsp;&nbsp;&nbsp;&nbsp;}
-    
-                    </div>
-
-                </div>
-                <div id="page2box2header">
+                    <pre class="code-content page2box1p2" tabindex="0" aria-label="Code example"><code>function Video({ video }) {
+  return (
+    &lt;div&gt;
+      &lt;Thumbnail video={video} /&gt;
+      &lt;a href={video.url}&gt;
+        &lt;h3&gt;{video.title}&lt;/h3&gt;
+        &lt;p&gt;{video.description}&lt;/p&gt;
+      &lt;/a&gt;
+      &lt;LikeButton video={video} /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+</div>
+                <div id="page2box2header" class="preview-panel">
                     <div id="page2box2p1">
 
-                        <div id="page2box2outer">
-                            <div id="page2box2inner">
-                                <div id="page2playbutton">
+                        <div id="page2box2outer" class="video-surface single-video">
+                            <div id="page2box2inner" class="video-thumb">
+                                <div id="page2playbutton" class="play-icon">
                                     <img src="./play-button.png" alt="playbutton" width="15px" height="15px">
                                 </div>
                             </div>
-                            <div id="page2box2outertext">
+                            <div id="page2box2outertext" class="video-info">
                                 <span>My Video</span>
                                 <span style="color: grey;">Video Description</span>
                             </div>
-                            <div id="page2box2outerheart">
-                                <button id="page2box2outerheartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                            <div id="page2box2outerheart" class="video-like">
+                                <button id="page2box2outerheartbutton" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                             </div>
                         </div>
 
@@ -127,101 +94,82 @@
             </div>
        </div>
 
-       <p id="page2ptext">Whether you work on your own or with thousands of other developers, using <br> React feels the same. It is designed to let you seamlessly combine components <br> written by independent people, teams, and organizations.</p>
+       <p id="page2ptext">Whether you work on your own or with thousands of other developers, using <br>  React feels the same. It is designed to let you seamlessly combine components <br>  written by independent people, teams, and organizations.</p>
         
     </div>
 
 
-    <div id="page3">
+    <div id="page3" class="content-section">
 
         <h1 id="page3h1">Write components <br> with code and markup </h1>
-        <p id="page3ptext">React components are JavaScript functions. Want to show some content <br> conditionally? Use an if statement. Displaying a list? Try array map(). Learning <br> React is learning programming.</p>
+        <p id="page3ptext">React components are JavaScript functions. Want to show some content <br>  conditionally? Use an if statement. Displaying a list? Try array map(). Learning <br>  React is learning programming.</p>
 
-        <div id="page3boxs">
+        <div id="page3boxs" class="example-pair">
 
-            <div id="page3box1">
-                <div id="page3box1header">
+            <div id="page3box1" class="code-panel">
+                <div id="page3box1header" class="code-title">
                     <span>VideoList.js</span>
                 </div>
-                <div id="page3box1mian">
-                    function&nbsp;&nbsp;videolist&nbsp;&nbsp;({&nbsp;&nbsp;videos,&nbsp;&nbsp;emptyheading&nbsp;&nbsp;})&nbsp;&nbsp;{ &nbsp;<br>
+                <pre class="code-content" tabindex="0" aria-label="Code example" id="page3box1mian"><code>function VideoList({ videos, emptyHeading }) {
+  const count = videos.length;
+  let heading = emptyHeading;
+  if (count &gt; 0) {
+    const noun = count &gt; 1 ? 'Videos' : 'Video';
+    heading = count + ' ' + noun;
+  }
+  return (
+    &lt;section&gt;
+      &lt;h2&gt;{heading}&lt;/h2&gt;
+      {videos.map(video =&gt;
+        &lt;Video key={video.id} video={video} /&gt;
+      )}
+    &lt;/section&gt;
+  );
+}</code></pre>
+</div>
 
-                    &nbsp;&nbsp;&nbsp;  const &nbsp;&nbsp;count&nbsp;&nbsp;=&nbsp;&nbsp;videos.&nbsp;length&nbsp;&nbsp;; <br>
+            <div id="page3box2" class="preview-panel">
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;&nbsp; heading &nbsp;&nbsp;= &nbsp;&nbsp;emptyHeading&nbsp;&nbsp;; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;&nbsp; (&nbsp;&nbsp;count &nbsp;&nbsp;&gt;&nbsp;&nbsp; 0&nbsp;&nbsp;)&nbsp;&nbsp; {  <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;&nbsp; noun&nbsp;&nbsp; = &nbsp;&nbsp;count&nbsp;&nbsp; &gt; &nbsp;&nbsp;1 &nbsp;&nbsp;? &nbsp;&nbsp;'Videos'&nbsp;&nbsp; : &nbsp;&nbsp;'Video'&nbsp;&nbsp;;  <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;heading &nbsp;&nbsp;= &nbsp;&nbsp;count&nbsp;&nbsp; +&nbsp;&nbsp; ' ' &nbsp;&nbsp;+ &nbsp;&nbsp;noun&nbsp;&nbsp;;   <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;} <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;&nbsp; ( <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;section&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp;&nbsp; h2 &nbsp;&nbsp; &gt; &nbsp;&nbsp; { &nbsp;&nbsp; heading &nbsp;&nbsp; } &nbsp;&nbsp; &lt; &nbsp;&nbsp; /h2 &nbsp;&nbsp; &gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; { &nbsp;&nbsp;videos.map &nbsp;&nbsp; ( &nbsp;&nbsp;video &nbsp;&nbsp; = &nbsp;&nbsp;&gt; <br>
-                        
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;&nbsp;&nbsp; Video &nbsp;&nbsp; key &nbsp;&nbsp;= &nbsp;&nbsp; { &nbsp;&nbsp; video.id &nbsp;&nbsp; } &nbsp;&nbsp; video &nbsp;&nbsp;= &nbsp;&nbsp; { &nbsp;&nbsp; video &nbsp;&nbsp; } &nbsp;&nbsp;/&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;); <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/section&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;); <br>
-
-                    &nbsp;&nbsp;}
-                </div>
-            </div>
-
-            <div id="page3box2">
-
-                <div id="page3box2outer">
+                <div id="page3box2outer" class="video-surface">
                     
                     <div id="page3box2outerheader">
                         <span>3 Videos</span>
                     </div>
 
-                    <div id="page3box2innerhead">
+                    <div id="page3box2innerhead" class="video-list">
 
-                        <div id="page3box2innermain1">
+                        <div id="page3box2innermain1" class="video-row">
 
-                            <div id="page3box2inner1p1">
-                                <div id="page3box2innerplaybutton">
+                            <div id="page3box2inner1p1" class="video-thumb gradient-1">
+                                <div id="page3box2innerplaybutton" class="play-icon">
                                     <img src="./play-button.png" alt="playbutton" width="15px" height="15px">
                                 </div>
                             </div>
 
 
-                            <div id="page3box2inner1p2">
+                            <div id="page3box2inner1p2" class="video-details">
                                 <div>
                                     <span>First Video</span> <br>
                                     <span style="color: grey;">Video Description</span>
                                 </div>
 
                                 <div>
-                                    <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                    <button id="page3box2heartbutton" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div id="page3box2innermain2">
+                        <div id="page3box2innermain2" class="video-row">
 
-                            <div id="page3box2inner2p1">
-                                <div id="page3box2innerplaybutton">
+                            <div id="page3box2inner2p1" class="video-thumb gradient-2">
+                                <div id="page3box2innerplaybutton-2" class="play-icon">
                                     <img src="./play-button.png" alt="playbutton" width="15px" height="15px">
                                 </div>
                             </div>
 
 
-                            <div id="page3box2inner2p2">
+                            <div id="page3box2inner2p2" class="video-details">
 
                                 <div>
                                     <span>Second Video</span> <br>
@@ -229,23 +177,23 @@
                                 </div>
                     
                                 <div>
-                                    <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                    <button id="page3box2heartbutton-2" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                 </div>
 
                             </div>
 
                         </div>
 
-                        <div id="page3box2innermain3">
+                        <div id="page3box2innermain3" class="video-row">
 
-                            <div id="page3box2inner3p1">
-                                <div id="page3box2innerplaybutton">
+                            <div id="page3box2inner3p1" class="video-thumb gradient-3">
+                                <div id="page3box2innerplaybutton-3" class="play-icon">
                                     <img src="./play-button.png" alt="playbutton" width="15px" height="15px">
                                 </div>
                             </div>
 
 
-                            <div id="page3box2inner3p2">
+                            <div id="page3box2inner3p2" class="video-details">
 
                                 <div>
                                     <span>Third Video</span> <br>
@@ -253,7 +201,7 @@
                                 </div>
                             
                                 <div>
-                                    <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                    <button id="page3box2heartbutton-3" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                 </div>
 
                             </div>
@@ -268,65 +216,47 @@
 
         </div>
 
-        <p id="page3ptext2">This markup syntax is called JSX. It is a JavaScript syntax extension popularized <br> by React. Putting JSX markup close to related rendering logic makes React <br> components easy to create, maintain, and delete.</p>
+        <p id="page3ptext2">This markup syntax is called JSX. It is a JavaScript syntax extension popularized <br>  by React. Putting JSX markup close to related rendering logic makes React <br>  components easy to create, maintain, and delete.</p>
 
     </div>
 
-    <div id="page4">
+    <div id="page4" class="content-section">
 
         <h1 id="page4h1">Add interactivity <br> wherever you need it</h1>
-        <p id="page4ptext">React components receive data and return what should appear on the screen. <br> You can pass them new data in response to an interaction, like when the user <br> types into an input. React will then update the screen to match the new data.</p>
+        <p id="page4ptext">React components receive data and return what should appear on the screen. <br>  You can pass them new data in response to an interaction, like when the user <br>  types into an input. React will then update the screen to match the new data.</p>
 
-        <div id="page4boxs">
+        <div id="page4boxs" class="example-pair">
 
-            <div id="page4box1">
+            <div id="page4box1" class="code-panel">
 
-                <div id="page4box1header">
+                <div id="page4box1header" class="code-title">
                     <span>SearchableVideoList.js</span>
                 </div>
 
-                <div id="page4box1main">
+                <pre class="code-content" tabindex="0" aria-label="Code example" id="page4box1main"><code>import { useState } from 'react';
 
-                    import &nbsp; { &nbsp; usestate &nbsp; } &nbsp; from &nbsp; 'react' <br> <br>
+function SearchableVideoList({ videos }) {
+  const [searchText, setSearchText] = useState('');
+  const foundVideos = filterVideos(videos, searchText);
+  return (
+    &lt;&gt;
+      &lt;SearchInput
+        value={searchText}
+        onChange={newText =&gt; setSearchText(newText)} /&gt;
+      &lt;VideoList
+        videos={foundVideos}
+        emptyHeading={`No matches for "${searchText}"`} /&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+</div>
 
-                    function &nbsp; searchablevideolist &nbsp; ({ &nbsp; video &nbsp; }) &nbsp;{ <br>
+            <div id="page4box2" class="preview-panel">
 
-                    &nbsp;&nbsp; const &nbsp; [ &nbsp; searchtext, &nbsp; setsearchtext &nbsp; ] &nbsp; = &nbsp; usestate &nbsp; (' &nbsp;') &nbsp;; <br>
+                <div id="page4box2main" class="browser-window">
 
-                    &nbsp;&nbsp; const &nbsp; foundvideo &nbsp; = &nbsp; fitervideos &nbsp; ( &nbsp; videos, &nbsp; searchtext &nbsp; ); <br>
-
-                    &nbsp;&nbsp; return &nbsp; ( <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp; &gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp; searchinput <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value &nbsp; = &nbsp; { &nbsp; searchtext &nbsp; } <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; onchange &nbsp; = &nbsp; { &nbsp; newtext &nbsp; = &nbsp; &gt; &nbsp; setsearchtext &nbsp; ( &nbsp; newtext &nbsp; )} &nbsp; /&gt &nbsp; ; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp; videolist <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; videos &nbsp; = &nbsp; { &nbsp; foundvideos &nbsp; } <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; emptyheading &nbsp; = &nbsp; { &nbsp; `No &nbsp; matches &nbsp; for &nbsp; "$ &nbsp; { &nbsp; searchtext &nbsp; } &nbsp; "` &nbsp; } &nbsp; /&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp; /&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;); <br>
-
-                    &nbsp;&nbsp;&nbsp;}
-
-                </div>
-
-            </div>
-
-            <div id="page4box2">
-
-                <div id="page4box2main">
-
-                    <div id="page4box2p1">
-                        <button id="page4box2p1button"> example.com/videos.html </button>
+                    <div id="page4box2p1" class="browser-toolbar">
+                        <button id="page4box2p1button" class="browser-address" type="button"> example.com/videos.html </button>
                     </div>
 
                     <div id="page4box2p2">
@@ -340,28 +270,28 @@
                             </p>
                         </div>
 
-                        <div id="page4box2p2part2">
+                        <div id="page4box2p2part2" class="demo-video-list">
 
-                            <input id="page4box2p2part2searchbar"  type="text" placeholder="       Search">
+                            <input id="page4box2p2part2searchbar" type="text" placeholder="Search" aria-label="Search videos" class="demo-search">
                             <h2 id="page4box2p2part2h2">5 Videos</h2>
 
 
 
 
-                            <div id="page4box2p2part2main1">
+                            <div id="page4box2p2part2main1" class="video-row">
                                 
-                                <div id="page4box2p2part2m1inner1">
-                                    <img src="./page4box2p2 React.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page4box2p2part2m1inner1" class="video-thumb">
+                                    <img src="./page4box2p2%20React.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page4box2p2part2m1inner2">
+                                <div id="page4box2p2part2m1inner2" class="video-details">
                                     <div>
                                         <span>React: The Documentary</span> <br>
                                         <span style="color: grey;">The origin story of React</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-4" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -371,20 +301,20 @@
 
 
 
-                            <div id="page4box2p2part2main2">
+                            <div id="page4box2p2part2main2" class="video-row">
                                 
-                                <div id="page4box2p2part2m2inner1">
-                                    <img src="./page4box2p2 is.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page4box2p2part2m2inner1" class="video-thumb">
+                                    <img src="./page4box2p2%20is.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page4box2p2part2m2inner2">
+                                <div id="page4box2p2part2m2inner2" class="video-details">
                                     <div>
                                         <span>Rethinking Best Practices</span> <br>
                                         <span style="color: grey;">Pete Hunt (2013)</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-5" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -394,20 +324,20 @@
 
 
 
-                            <div id="page4box2p2part2main3">
+                            <div id="page4box2p2part2main3" class="video-row">
                                 
-                                <div id="page4box2p2part2m3inner1">
-                                    <img src="./page4box2p2 introducing react.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page4box2p2part2m3inner1" class="video-thumb">
+                                    <img src="./page4box2p2%20introducing%20react.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page4box2p2part2m3inner2">
+                                <div id="page4box2p2part2m3inner2" class="video-details">
                                     <div>
                                         <span>Introducing React Native</span> <br>
                                         <span style="color: grey;">Tom Occhino (2015)</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-6" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -417,20 +347,20 @@
 
 
 
-                            <div id="page4box2p2part2main4">
+                            <div id="page4box2p2part2main4" class="video-row">
                                 
-                                <div id="page4box2p2part2m4inner1">
-                                    <img src="./page4box2p2 intoducing components.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page4box2p2part2m4inner1" class="video-thumb">
+                                    <img src="./page4box2p2%20intoducing%20components.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page4box2p2part2m4inner2">
+                                <div id="page4box2p2part2m4inner2" class="video-details">
                                     <div>
                                         <span>Introducing React Hooks</span> <br>
                                         <span style="color: grey;">Sophie Alpert and Dan Abramov (2018)</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-7" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -440,20 +370,20 @@
 
 
 
-                            <div id="page4box2p2part2main5">
+                            <div id="page4box2p2part2main5" class="video-row">
                                 
-                                <div id="page4box2p2part2m5inner1">
-                                    <img src="./page4box2p2 back react logo.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page4box2p2part2m5inner1" class="video-thumb">
+                                    <img src="./page4box2p2%20back%20react%20logo.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page4box2p2part2m5inner2">
+                                <div id="page4box2p2part2m5inner2" class="video-details">
                                     <div>
                                         <span>Introducing Server Components</span> <br>
                                         <span style="color: grey;">Dan Abramov and Lauren Tan (2020)</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-8" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -470,82 +400,61 @@
 
         </div>
 
-        <p id="page4ptext2">You don’t have to build your whole page in React. Add React to your existing <br> HTML page, and render interactive React components anywhere on it.</p>
+        <p id="page4ptext2">You don’t have to build your whole page in React. Add React to your existing <br>  HTML page, and render interactive React components anywhere on it.</p>
 
         <div id="page4footerbuttonhead">
-            <button id="page4footerbutton"> &lt;/&gt; &nbsp; Add React to your page &nbsp; &gt; </button>
+            <button id="page4footerbutton" class="pill-button" type="button"> &lt;/&gt;   Add React to your page   &gt; </button>
         </div>
 
     </div>
 
-    <div id="page5">
+    <div id="page5" class="content-section">
         
         <div id="page5header">
 
             <h1 id="page5h1">Go full-stack <br> with a framework</h1>
-            <p id="page5ptext">React is a library. It lets you put components together, but it doesn’t prescribe <br> how to do routing and data fetching. To build an entire app with React, we <br> recommend a full-stack React framework like Next.js or React Router.</p>
+            <p id="page5ptext">React is a library. It lets you put components together, but it doesn’t prescribe <br>  how to do routing and data fetching. To build an entire app with React, we <br>  recommend a full-stack React framework like Next.js or React Router.</p>
 
         </div>
 
-        <div id="page5boxs">
+        <div id="page5boxs" class="example-pair">
 
-            <div id="page5box1">
+            <div id="page5box1" class="code-panel">
 
-                <div id="page5box1header">
+                <div id="page5box1header" class="code-title">
                     <span>Confs/[slug].js</span>
                 </div>
 
-                <div id="page5box1main">
+                <pre class="code-content" tabindex="0" aria-label="Code example" id="page5box1main"><code>import { db } from './database.js';
+import { Suspense } from 'react';
 
-                    import &nbsp; { &nbsp; db &nbsp; } &nbsp; from &nbsp; './database.js' &nbsp;; <br>
+async function ConferencePage({ slug }) {
+  const conf = await db.Confs.find({ slug });
+  return (
+    &lt;ConferenceLayout conf={conf}&gt;
+      &lt;Suspense fallback={&lt;TalksLoading /&gt;}&gt;
+        &lt;Talks confId={conf.id} /&gt;
+      &lt;/Suspense&gt;
+    &lt;/ConferenceLayout&gt;
+  );
+}
 
-                    import &nbsp; { &nbsp; Suspense &nbsp; } &nbsp; from &nbsp; 'react'&nbsp; ; <br><br>
-
-
-                    async &nbsp; function &nbsp; ConferencePage &nbsp; ({ slug }) &nbsp; { <br>
-
-                    &nbsp;&nbsp; const &nbsp; conf &nbsp; = &nbsp; await &nbsp; db.Confs.find &nbsp; ({ slug })&nbsp;; <br>
-
-                    &nbsp;&nbsp; return &nbsp; ( <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;ConferenceLayout &nbsp; conf &nbsp; = &nbsp; { conf } &nbsp; &gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Suspense &nbsp; fallback &nbsp; = &nbsp; { &nbsp; &lt;TalksLoading /&gt; &nbsp; } &nbsp; &gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; Talks &nbsp; confId &nbsp; = &nbsp; {conf.id} &nbsp; /&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/Suspense&gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt; &nbsp; /ConferenceLayout &nbsp; &gt; <br>
-
-                    &nbsp;&nbsp;&nbsp;); <br>
-
-                    &nbsp;} <br><br>
-
-
-                    async &nbsp; function &nbsp; Talks &nbsp; ({ confId }) &nbsp; { <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;onst &nbsp; talks &nbsp; = &nbsp; await &nbsp; db.Talks.findAll &nbsp; ({ confId })&nbsp; ; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;const &nbsp; videos &nbsp; = &nbsp; talks.map &nbsp; (talk =&nbsp; &gt; &nbsp; talk.video&nbsp; )&nbsp; ; <br>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp; return &nbsp; &lt; &nbsp; SearchableVideoList &nbsp; videos &nbsp; = &nbsp; {videos}  &nbsp; /&gt; &nbsp; ; <br>
-
-                    }
-
-                </div>
-
-            </div>
+async function Talks({ confId }) {
+  const talks = await db.Talks.findAll({ confId });
+  const videos = talks.map(talk =&gt; talk.video);
+  return &lt;SearchableVideoList videos={videos} /&gt;;
+}</code></pre>
+</div>
             
 
-            <div id="page5box2">
+            <div id="page5box2" class="preview-panel">
 
-                <div id="page5box2main">
+                <div id="page5box2main" class="browser-window">
 
-                    <div id="page5box2p1">
-                        <button id="page5box2p1button"> example.com/confs/react-confs-2021 </button>
+                    <div id="page5box2p1" class="browser-toolbar">
+                        <button id="page5box2p1button" class="browser-address" type="button"> example.com/confs/react-confs-2021 </button>
                         <div id="page5box2p1restart">
-                            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-tertiary text-lg"><path d="M13.8982 5.20844C12.4626 4.88688 10.9686 4.93769 9.55821 5.35604L11.8524 3.06184C11.8989 3.0154 11.9357 2.96028 11.9608 2.89961C11.986 2.83894 11.9989 2.77391 11.9989 2.70824C11.9989 2.64256 11.986 2.57754 11.9608 2.51686C11.9357 2.45619 11.8989 2.40107 11.8524 2.35464L11.1456 1.64784C11.0992 1.60139 11.0441 1.56455 10.9834 1.53942C10.9227 1.51428 10.8577 1.50134 10.792 1.50134C10.7263 1.50134 10.6613 1.51428 10.6006 1.53942C10.54 1.56455 10.4848 1.60139 10.4384 1.64784L6.14571 5.94054C6.00654 6.07969 5.89615 6.2449 5.82083 6.42673C5.74551 6.60855 5.70675 6.80343 5.70675 7.00024C5.70675 7.19704 5.74551 7.39192 5.82083 7.57374C5.89615 7.75557 6.00654 7.92078 6.14571 8.05994L10.4387 12.3529C10.5325 12.4465 10.6595 12.4991 10.792 12.4991C10.9245 12.4991 11.0516 12.4465 11.1453 12.3529L11.8527 11.6455C11.9463 11.5518 11.9989 11.4247 11.9989 11.2922C11.9989 11.1598 11.9463 11.0327 11.8527 10.9389L8.77481 7.86104C9.99795 7.16236 11.415 6.8801 12.8125 7.05678C14.21 7.23347 15.5122 7.85953 16.523 8.84064C17.5338 9.82176 18.1983 11.1048 18.4165 12.4964C18.6347 13.888 18.3947 15.3129 17.7328 16.5562C17.0708 17.7996 16.0227 18.7942 14.7463 19.3902C13.47 19.9861 12.0345 20.1511 10.6563 19.8603C9.27798 19.5695 8.03152 18.8387 7.10469 17.778C6.17786 16.7172 5.62086 15.384 5.51761 13.9791C5.51156 13.8512 5.45689 13.7303 5.36477 13.6413C5.27265 13.5522 5.15001 13.5017 5.02191 13.5H4.02081C3.95297 13.4996 3.88574 13.5129 3.8232 13.5392C3.76065 13.5655 3.70408 13.6042 3.6569 13.6529C3.60972 13.7017 3.57291 13.7595 3.54869 13.8228C3.52448 13.8862 3.51336 13.9538 3.51601 14.0216C3.61349 15.5965 4.1473 17.1132 5.0577 18.4019C5.9681 19.6906 7.21917 20.7006 8.6709 21.3188C10.1226 21.937 11.7178 22.139 13.2778 21.9022C14.8378 21.6654 16.3011 20.9992 17.504 19.978C18.7069 18.9569 19.6019 17.6212 20.0889 16.1203C20.5759 14.6195 20.6356 13.0128 20.2614 11.4799C19.8872 9.94705 19.0938 8.54858 17.97 7.44098C16.8462 6.33339 15.4363 5.56037 13.8982 5.20844V5.20844Z" fill="currentColor"></path></svg>
+                            <svg width="1em" height="1em" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-tertiary text-lg"><path d="M13.8982 5.20844C12.4626 4.88688 10.9686 4.93769 9.55821 5.35604L11.8524 3.06184C11.8989 3.0154 11.9357 2.96028 11.9608 2.89961C11.986 2.83894 11.9989 2.77391 11.9989 2.70824C11.9989 2.64256 11.986 2.57754 11.9608 2.51686C11.9357 2.45619 11.8989 2.40107 11.8524 2.35464L11.1456 1.64784C11.0992 1.60139 11.0441 1.56455 10.9834 1.53942C10.9227 1.51428 10.8577 1.50134 10.792 1.50134C10.7263 1.50134 10.6613 1.51428 10.6006 1.53942C10.54 1.56455 10.4848 1.60139 10.4384 1.64784L6.14571 5.94054C6.00654 6.07969 5.89615 6.2449 5.82083 6.42673C5.74551 6.60855 5.70675 6.80343 5.70675 7.00024C5.70675 7.19704 5.74551 7.39192 5.82083 7.57374C5.89615 7.75557 6.00654 7.92078 6.14571 8.05994L10.4387 12.3529C10.5325 12.4465 10.6595 12.4991 10.792 12.4991C10.9245 12.4991 11.0516 12.4465 11.1453 12.3529L11.8527 11.6455C11.9463 11.5518 11.9989 11.4247 11.9989 11.2922C11.9989 11.1598 11.9463 11.0327 11.8527 10.9389L8.77481 7.86104C9.99795 7.16236 11.415 6.8801 12.8125 7.05678C14.21 7.23347 15.5122 7.85953 16.523 8.84064C17.5338 9.82176 18.1983 11.1048 18.4165 12.4964C18.6347 13.888 18.3947 15.3129 17.7328 16.5562C17.0708 17.7996 16.0227 18.7942 14.7463 19.3902C13.47 19.9861 12.0345 20.1511 10.6563 19.8603C9.27798 19.5695 8.03152 18.8387 7.10469 17.778C6.17786 16.7172 5.62086 15.384 5.51761 13.9791C5.51156 13.8512 5.45689 13.7303 5.36477 13.6413C5.27265 13.5522 5.15001 13.5017 5.02191 13.5H4.02081C3.95297 13.4996 3.88574 13.5129 3.8232 13.5392C3.76065 13.5655 3.70408 13.6042 3.6569 13.6529C3.60972 13.7017 3.57291 13.7595 3.54869 13.8228C3.52448 13.8862 3.51336 13.9538 3.51601 14.0216C3.61349 15.5965 4.1473 17.1132 5.0577 18.4019C5.9681 19.6906 7.21917 20.7006 8.6709 21.3188C10.1226 21.937 11.7178 22.139 13.2778 21.9022C14.8378 21.6654 16.3011 20.9992 17.504 19.978C18.7069 18.9569 19.6019 17.6212 20.0889 16.1203C20.5759 14.6195 20.6356 13.0128 20.2614 11.4799C19.8872 9.94705 19.0938 8.54858 17.97 7.44098C16.8462 6.33339 15.4363 5.56037 13.8982 5.20844V5.20844Z" fill="currentColor"></path></svg>
                         </div>
                     </div>
 
@@ -561,25 +470,25 @@
 
                         </div>
 
-                        <div id="page5box2p2main">
+                        <div id="page5box2p2main" class="demo-video-list">
 
-                            <input id="page5box2p2searchbar"  type="text" placeholder="       Search">
+                            <input id="page5box2p2searchbar" type="text" placeholder="Search" aria-label="Search videos" class="demo-search">
                             <h2 id="page5box2p2h2">5 Videos</h2>
 
-                            <div id="page5box2p2main1">
+                            <div id="page5box2p2main1" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1" class="video-thumb">
+                                    <img src="./react%20keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2" class="video-details">
                                     <div>
                                         <span>React 18 Keynotes</span> <br>
                                         <span style="color: grey;">The React Team</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-9" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -590,20 +499,20 @@
 
                            
 
-                            <div id="page5box2p2main2">
+                            <div id="page5box2p2main2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react app develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-2" class="video-thumb">
+                                    <img src="./react%20app%20develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-2" class="video-details">
                                     <div>
                                         <span>React 18 for App Developers</span> <br>
                                         <span style="color: grey;">Shruti Kapoor</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-10" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -611,20 +520,20 @@
                             </div>
 
 
-                            <div id="page5box2p2main3">
+                            <div id="page5box2p2main3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-3" class="video-thumb">
+                                    <img src="./react%20suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-3" class="video-details">
                                     <div>
                                         <span>Streaming Server Rendering with Suspense</span> <br>
                                         <span style="color: grey;">Shaundai person</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-11" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -633,20 +542,20 @@
 
 
 
-                            <div id="page5box2p2main4">
+                            <div id="page5box2p2main4" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-4" class="video-thumb">
+                                    <img src="./react%20group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-4" class="video-details">
                                     <div>
                                         <span>The First React working Group</span> <br>
                                         <span style="color: grey;">Aakansha Doshi</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-12" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -656,20 +565,20 @@
 
 
 
-                            <div id="page5box2p2main5">
+                            <div id="page5box2p2main5" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react develpor tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-5" class="video-thumb">
+                                    <img src="./react%20develpor%20tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-5" class="video-details">
                                     <div>
                                         <span>React developer Tooling</span> <br>
                                         <span style="color: grey;">Brian Vaugh</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-13" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -679,20 +588,20 @@
 
 
 
-                            <div id="page5box2p2main1">
+                            <div id="page5box2p2main1-2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-6" class="video-thumb">
+                                    <img src="./react%20keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-6" class="video-details">
                                     <div>
                                         <span>React 18 Keynotes</span> <br>
                                         <span style="color: grey;">The React Team</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-14" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -702,20 +611,20 @@
 
 
 
-                            <div id="page5box2p2main2">
+                            <div id="page5box2p2main2-2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react app develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-7" class="video-thumb">
+                                    <img src="./react%20app%20develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-7" class="video-details">
                                     <div>
                                         <span>React 18 for App Developers</span> <br>
                                         <span style="color: grey;">Shruti Kapoor</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-15" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -725,20 +634,20 @@
 
 
 
-                           <div id="page5box2p2main3">
+                           <div id="page5box2p2main3-2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-8" class="video-thumb">
+                                    <img src="./react%20suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-8" class="video-details">
                                     <div>
                                         <span>Streaming Server Rendering with Suspense</span> <br>
                                         <span style="color: grey;">Shaundai person</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-16" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -748,20 +657,20 @@
 
 
 
-                            <div id="page5box2p2main4">
+                            <div id="page5box2p2main4-2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-9" class="video-thumb">
+                                    <img src="./react%20group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-9" class="video-details">
                                     <div>
                                         <span>The First React working Group</span> <br>
                                         <span style="color: grey;">Aakansha Doshi</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-17" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -770,20 +679,20 @@
 
 
 
-                            <div id="page5box2p2main5">
+                            <div id="page5box2p2main5-2" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react develpor tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-10" class="video-thumb">
+                                    <img src="./react%20develpor%20tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-10" class="video-details">
                                     <div>
                                         <span>React developer Tooling</span> <br>
                                         <span style="color: grey;">Brian Vaugh</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-18" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -793,20 +702,20 @@
 
 
 
-                            <div id="page5box2p2main1">
+                            <div id="page5box2p2main1-3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-11" class="video-thumb">
+                                    <img src="./react%20keynote.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-11" class="video-details">
                                     <div>
                                         <span>React 18 Keynotes</span> <br>
                                         <span style="color: grey;">The React Team</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-19" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -817,20 +726,20 @@
 
                            
 
-                            <div id="page5box2p2main2">
+                            <div id="page5box2p2main2-3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react app develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-12" class="video-thumb">
+                                    <img src="./react%20app%20develpor.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-12" class="video-details">
                                     <div>
                                         <span>React 18 for App Developers</span> <br>
                                         <span style="color: grey;">Shruti Kapoor</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-20" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -838,20 +747,20 @@
                             </div>
 
 
-                            <div id="page5box2p2main3">
+                            <div id="page5box2p2main3-3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-13" class="video-thumb">
+                                    <img src="./react%20suspense.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-13" class="video-details">
                                     <div>
                                         <span>Streaming Server Rendering with Suspense</span> <br>
                                         <span style="color: grey;">Shaundai person</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-21" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -860,20 +769,20 @@
 
 
 
-                            <div id="page5box2p2main4">
+                            <div id="page5box2p2main4-3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-14" class="video-thumb">
+                                    <img src="./react%20group.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-14" class="video-details">
                                     <div>
                                         <span>The First React working Group</span> <br>
                                         <span style="color: grey;">Aakansha Doshi</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-22" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -883,20 +792,20 @@
 
 
 
-                            <div id="page5box2p2main5">
+                            <div id="page5box2p2main5-3" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react develpor tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-15" class="video-thumb">
+                                    <img src="./react%20develpor%20tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-15" class="video-details">
                                     <div>
                                         <span>React developer Tooling</span> <br>
                                         <span style="color: grey;">Brian Vaugh</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-23" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -905,20 +814,20 @@
 
 
 
-                            <div id="page5box2p2main5">
+                            <div id="page5box2p2main5-4" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react develpor tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-16" class="video-thumb">
+                                    <img src="./react%20develpor%20tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-16" class="video-details">
                                     <div>
                                         <span>React developer Tooling</span> <br>
                                         <span style="color: grey;">Brian Vaugh</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-24" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -927,20 +836,20 @@
 
 
 
-                            <div id="page5box2p2main5">
+                            <div id="page5box2p2main5-5" class="video-row">
                                 
-                                <div id="page5box2p2m1inner1">
-                                    <img src="./react develpor tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
+                                <div id="page5box2p2m1inner1-17" class="video-thumb">
+                                    <img src="./react%20develpor%20tooling.png" alt="pic 1" height="79px" width="142px" style="border-radius: 15px;">
                                 </div>
 
-                                <div id="page5box2p2m1inner2">
+                                <div id="page5box2p2m1inner2-17" class="video-details">
                                     <div>
                                         <span>React developer Tooling</span> <br>
                                         <span style="color: grey;">Brian Vaugh</span>
                                     </div>
                             
                                     <div>
-                                        <button id="page3box2heartbutton"><img src="./heart.png" alt="" height="20px" width="20px"></button>
+                                        <button id="page3box2heartbutton-25" class="heart-button" aria-label="Like video" type="button"><img src="./heart.png" alt="" height="20px" width="20px"></button>
                                     </div>
 
                                 </div>
@@ -957,101 +866,105 @@
 
         </div>
 
-        <p id="page5ptext2">React is also an architecture. Frameworks that implement it let you fetch data in <br> asynchronous components that run on the server or even during the build. Read <br> data from a file or a database, and pass it down to your interactive components.</p>
+        <p id="page5ptext2">React is also an architecture. Frameworks that implement it let you fetch data in <br>  asynchronous components that run on the server or even during the build. Read <br>  data from a file or a database, and pass it down to your interactive components.</p>
 
         <div id="page5footerbuttonhead">
-            <button id="page5footerbutton"> <svg class="me-2.5 text-primary dark:text-primary-dark" fill="none" width="24" height="24" viewBox="0 0 72 72" aria-hidden="true"><g clip-path="url(#clip0_10_21081)"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.9136 29.0343C46.8321 26.9072 48 24.09 48 21C48 14.3726 42.6274 9 36 9C29.3726 9 24 14.3726 24 21C24 24.0904 25.1682 26.9079 27.0871 29.0351L21.0026 39.3787C20.0429 39.1315 19.0368 39 18 39C11.3726 39 6 44.3726 6 51C6 57.6274 11.3726 63 18 63C23.5915 63 28.2898 59.1757 29.6219 54H42.3781C43.7102 59.1757 48.4085 63 54 63C60.6274 63 66 57.6274 66 51C66 44.3726 60.6274 39 54 39C52.9614 39 51.9537 39.1319 50.9926 39.38L44.9136 29.0343ZM42 21C42 24.3137 39.3137 27 36 27C32.6863 27 30 24.3137 30 21C30 17.6863 32.6863 15 36 15C39.3137 15 42 17.6863 42 21ZM39.9033 32.3509C38.6796 32.7716 37.3665 33 36 33C34.6338 33 33.321 32.7717 32.0975 32.3512L26.2523 42.288C27.8635 43.8146 29.0514 45.7834 29.6219 48H42.3781C42.9482 45.785 44.1348 43.8175 45.7441 42.2913L39.9033 32.3509ZM54 57C50.6863 57 48 54.3137 48 51C48 47.6863 50.6863 45 54 45C57.3137 45 60 47.6863 60 51C60 54.3137 57.3137 57 54 57ZM24 51C24 47.6863 21.3137 45 18 45C14.6863 45 12 47.6863 12 51C12 54.3137 14.6863 57 18 57C21.3137 57 24 54.3137 24 51Z" fill="currentColor"></path></g><defs><clipPath id="clip0_10_21081"><rect width="72" height="72" fill="white"></rect></clipPath></defs></svg> Get Started with a Framework </button>
+            <button id="page5footerbutton" class="pill-button" type="button"> <svg class="me-2.5 text-primary dark:text-primary-dark" fill="none" width="24" height="24" viewbox="0 0 72 72" aria-hidden="true"><g clip-path="url(#clip0_10_21081)"><path fill-rule="evenodd" clip-rule="evenodd" d="M44.9136 29.0343C46.8321 26.9072 48 24.09 48 21C48 14.3726 42.6274 9 36 9C29.3726 9 24 14.3726 24 21C24 24.0904 25.1682 26.9079 27.0871 29.0351L21.0026 39.3787C20.0429 39.1315 19.0368 39 18 39C11.3726 39 6 44.3726 6 51C6 57.6274 11.3726 63 18 63C23.5915 63 28.2898 59.1757 29.6219 54H42.3781C43.7102 59.1757 48.4085 63 54 63C60.6274 63 66 57.6274 66 51C66 44.3726 60.6274 39 54 39C52.9614 39 51.9537 39.1319 50.9926 39.38L44.9136 29.0343ZM42 21C42 24.3137 39.3137 27 36 27C32.6863 27 30 24.3137 30 21C30 17.6863 32.6863 15 36 15C39.3137 15 42 17.6863 42 21ZM39.9033 32.3509C38.6796 32.7716 37.3665 33 36 33C34.6338 33 33.321 32.7717 32.0975 32.3512L26.2523 42.288C27.8635 43.8146 29.0514 45.7834 29.6219 48H42.3781C42.9482 45.785 44.1348 43.8175 45.7441 42.2913L39.9033 32.3509ZM54 57C50.6863 57 48 54.3137 48 51C48 47.6863 50.6863 45 54 45C57.3137 45 60 47.6863 60 51C60 54.3137 57.3137 57 54 57ZM24 51C24 47.6863 21.3137 45 18 45C14.6863 45 12 47.6863 12 51C12 54.3137 14.6863 57 18 57C21.3137 57 24 54.3137 24 51Z" fill="currentColor"></path></g><defs><clippath id="clip0_10_21081"><rect width="72" height="72" fill="white"></rect></clippath></defs></svg> Get Started with a Framework </button>
         </div>
  
     </div>
 
-    <div id="page6">
+    <div id="page6" class="content-section">
         
         <div id="page6header">
 
             <h1 id="page6h1">Use the best from <br> every platform</h1> 
 
-            <p id="page6ptext">People love web and native apps for different reasons. React lets you build both <br> web apps and native apps using the same skills. It leans upon each platform’s <br> unique strengths to let your interfaces feel just right on every platform.</p>
+            <p id="page6ptext">People love web and native apps for different reasons. React lets you build both <br>  web apps and native apps using the same skills. It leans upon each platform’s <br>  unique strengths to let your interfaces feel just right on every platform.</p>
 
         </div>
 
         <div id="page6boxheader">
 
-            <div id="page6box1header">
+            <div id="page6box1header" class="platform-card">
 
                 <div id="page6box1">
-                <button id="page6button1"> example.com </button>
+                <button id="page6button1" type="button"> example.com </button>
             </div>
             <div id="page6boxmain1">
                 <h4 id="page6box1h4">Stay true to the web</h4>
-                <p id="page6ptextbox1">People expect web app pages to load fast. On the <br> server, React lets you start streaming HTML while <br> you’re still fetching data, progressively filling in the <br> remaining content before any JavaScript code loads. <br> On the client, React can use standard web APIs to keep <br> your UI responsive even in the middle of rendering.</p>
+                <p id="page6ptextbox1">People expect web app pages to load fast. On the <br>  server, React lets you start streaming HTML while <br>  you’re still fetching data, progressively filling in the <br>  remaining content before any JavaScript code loads. <br>  On the client, React can use standard web APIs to keep <br>  your UI responsive even in the middle of rendering.</p>
 
-                <img id="chorom" src="./chorome icon.jpeg" alt="chorome" height="80px" width="80px">
-                <img id="browser" src="./browser icopn.jpeg" alt="browser" height="80px" width="80px">
-                <img id="safari" src="./safari icon.jpeg" alt="safari" height="80px" width="80px">
+                <div class="platform-icons">
+<img id="chorom" src="./chorome%20icon.jpeg" alt="chorome" height="80px" width="80px">
+                <img id="browser" src="./browser%20icopn.jpeg" alt="browser" height="80px" width="80px">
+                <img id="safari" src="./safari%20icon.jpeg" alt="safari" height="80px" width="80px">
+
+            </div>
+</div>
 
             </div>
 
-            </div>
-
-            <div id="page6boxmain2">
+            <div id="page6boxmain2" class="platform-card">
                 
                 <div id="page6box2iconsmain">
                     <div>14:50</div>
                     <div id="page6box2icons">
-                        <img src="./bluetooth icon.png" alt="bluetooth" width="15px" height="15px">
-                        <img src="./wifi icon.png" alt="wifi" width="15px" height="15px">
-                        <img src="./battry icon.png" alt="battry" width="15px" height="15px">
+                        <img src="./bluetooth%20icon.png" alt="bluetooth" width="15px" height="15px">
+                        <img src="./wifi%20icon.png" alt="wifi" width="15px" height="15px">
+                        <img src="./battry%20icon.png" alt="battry" width="15px" height="15px">
                     </div>
                 </div>
 
                 <h4 id="page6boxh4">Go truly native</h4>
-                <p id="page6ptextbox2">People expect native apps to look and feel like their <br> platform. React Native and Expo let you build apps <br> in React for Android, iOS, and more. They look and <br> feel native because their UIs are truly native. It’s not <br> a web view—your React components render real <br> Android and iOS views provided by the platform.</p>
+                <p id="page6ptextbox2">People expect native apps to look and feel like their <br>  platform. React Native and Expo let you build apps <br>  in React for Android, iOS, and more. They look and <br>  feel native because their UIs are truly native. It’s not <br>  a web view—your React components render real <br>  Android and iOS views provided by the platform.</p>
 
-                <img id="apple" src="./apple icon.webp" alt="apple" width="80px" height="80px">
-                <img id="android" src="./Android icon.png" alt="android" width="80px" height="80px">
+                <div class="platform-icons">
+<img id="apple" src="./apple%20icon.webp" alt="apple" width="80px" height="80px">
+                <img id="android" src="./Android%20icon.png" alt="android" width="80px" height="80px">
             </div>
+</div>
 
         </div>
 
         <div id="page6ptext2header">
-            <p id="page6ptext2">With React, you can be a web and a native developer. Your team can ship to many <br> platforms without sacrificing the user experience. Your organization can bridge <br> the platform silos, and form teams that own entire features end-to-end.</p>
+            <p id="page6ptext2">With React, you can be a web and a native developer. Your team can ship to many <br>  platforms without sacrificing the user experience. Your organization can bridge <br>  the platform silos, and form teams that own entire features end-to-end.</p>
         </div>
 
         <div id="page6button2header">
-            <button id="page6button2"> <svg class="me-2.5 text-primary dark:text-primary-dark" fill="none" width="24" height="24" viewBox="0 0 72 72" aria-hidden="true"><g clip-path="url(#clip0_8_10998)"><path d="M54.0001 15H18.0001C16.3432 15 15.0001 16.3431 15.0001 18V42H33V48H12.9567L9.10021 57L24.0006 57C24.0006 55.3431 25.3437 54 27.0006 54H33V57.473C33 59.3786 33.3699 61.2582 34.0652 63H9.10021C4.79287 63 1.88869 58.596 3.5852 54.6368L9.0001 42V18C9.0001 13.0294 13.0295 9 18.0001 9H54.0001C58.9707 9 63.0001 13.0294 63.0001 18V25.4411C62.0602 25.0753 61.0589 24.8052 60.0021 24.6458C59.0567 24.5032 58.0429 24.3681 57.0001 24.2587V18C57.0001 16.3431 55.6569 15 54.0001 15Z" fill="currentColor"></path><path d="M48 42C48 40.3431 49.3431 39 51 39H54C55.6569 39 57 40.3431 57 42C57 43.6569 55.6569 45 54 45H51C49.3431 45 48 43.6569 48 42Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M45.8929 30.5787C41.8093 31.1947 39 34.8257 39 38.9556V57.473C39 61.6028 41.8093 65.2339 45.8929 65.8499C48.0416 66.174 50.3981 66.4286 52.5 66.4286C54.6019 66.4286 56.9584 66.174 59.1071 65.8499C63.1907 65.2339 66 61.6028 66 57.473V38.9556C66 34.8258 63.1907 31.1947 59.1071 30.5787C56.9584 30.2545 54.6019 30 52.5 30C50.3981 30 48.0416 30.2545 45.8929 30.5787ZM60 57.473V38.9556C60 37.4615 59.0438 36.637 58.2121 36.5116C56.2014 36.2082 54.1763 36 52.5 36C50.8237 36 48.7986 36.2082 46.7879 36.5116C45.9562 36.637 45 37.4615 45 38.9556V57.473C45 58.9671 45.9562 59.7916 46.7879 59.917C48.7986 60.2203 50.8237 60.4286 52.5 60.4286C54.1763 60.4286 56.2014 60.2203 58.2121 59.917C59.0438 59.7916 60 58.9671 60 57.473Z" fill="currentColor"></path></g><defs><clipPath id="clip0_8_10998"><rect width="72" height="72" fill="white"></rect></clipPath></defs></svg> Build for native platform &gt; </button>
+            <button id="page6button2" class="pill-button" type="button"> <svg class="me-2.5 text-primary dark:text-primary-dark" fill="none" width="24" height="24" viewbox="0 0 72 72" aria-hidden="true"><g clip-path="url(#clip0_8_10998)"><path d="M54.0001 15H18.0001C16.3432 15 15.0001 16.3431 15.0001 18V42H33V48H12.9567L9.10021 57L24.0006 57C24.0006 55.3431 25.3437 54 27.0006 54H33V57.473C33 59.3786 33.3699 61.2582 34.0652 63H9.10021C4.79287 63 1.88869 58.596 3.5852 54.6368L9.0001 42V18C9.0001 13.0294 13.0295 9 18.0001 9H54.0001C58.9707 9 63.0001 13.0294 63.0001 18V25.4411C62.0602 25.0753 61.0589 24.8052 60.0021 24.6458C59.0567 24.5032 58.0429 24.3681 57.0001 24.2587V18C57.0001 16.3431 55.6569 15 54.0001 15Z" fill="currentColor"></path><path d="M48 42C48 40.3431 49.3431 39 51 39H54C55.6569 39 57 40.3431 57 42C57 43.6569 55.6569 45 54 45H51C49.3431 45 48 43.6569 48 42Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M45.8929 30.5787C41.8093 31.1947 39 34.8257 39 38.9556V57.473C39 61.6028 41.8093 65.2339 45.8929 65.8499C48.0416 66.174 50.3981 66.4286 52.5 66.4286C54.6019 66.4286 56.9584 66.174 59.1071 65.8499C63.1907 65.2339 66 61.6028 66 57.473V38.9556C66 34.8258 63.1907 31.1947 59.1071 30.5787C56.9584 30.2545 54.6019 30 52.5 30C50.3981 30 48.0416 30.2545 45.8929 30.5787ZM60 57.473V38.9556C60 37.4615 59.0438 36.637 58.2121 36.5116C56.2014 36.2082 54.1763 36 52.5 36C50.8237 36 48.7986 36.2082 46.7879 36.5116C45.9562 36.637 45 37.4615 45 38.9556V57.473C45 58.9671 45.9562 59.7916 46.7879 59.917C48.7986 60.2203 50.8237 60.4286 52.5 60.4286C54.1763 60.4286 56.2014 60.2203 58.2121 59.917C59.0438 59.7916 60 58.9671 60 57.473Z" fill="currentColor"></path></g><defs><clippath id="clip0_8_10998"><rect width="72" height="72" fill="white"></rect></clippath></defs></svg> Build for native platform &gt; </button>
         </div>
 
     </div>
 
-    <div id="page7">
+    <div id="page7" class="content-section">
         <div id="page7mainbox1">
             <h1 id="page7h1">Upgrade when the <br> future is ready</h1>
-            <p id="page7ptext">React approaches changes with care. Every React <br> commit is tested on business-critical surfaces with over <br>  a billion users. Over 100,000 React components <br> at Meta help validate every migration strategy. <br><br>
+            <p id="page7ptext">React approaches changes with care. Every React <br>  commit is tested on business-critical surfaces with over <br>   a billion users. Over 100,000 React components <br>  at Meta help validate every migration strategy. <br> <br> 
 
-            The React team is always researching how to improve <br> React. Some research takes years to pay off. React has <br> a high bar for taking a research idea into production. <br> Only proven approaches become a part of React.</p>
+            The React team is always researching how to improve <br>  React. Some research takes years to pay off. React has <br>  a high bar for taking a research idea into production. <br>  Only proven approaches become a part of React.</p>
 
-            <button id="page7button">  Read more React News &gt; </button>
+            <button id="page7button" class="pill-button" type="button">  Read more React News &gt; </button>
         </div>
 
         <div id="page7mainbox2">
             <h3>LATEST REACT NEWS</h3>
-            <div id="page7box2topbox1">
-                <button id="page7top1"> <p>The React Foundation : A <br> New Home 
-                for Reacted Hosted By <br> The Linux Foundation </p> February 24,2026 </button >
-                <button id="page7top2">  <p> Additional <br> Vulnerabilities in <br> RSC </p> December 11,2025  </button>
+            <div id="page7box2topbox1" class="news-row">
+                <button id="page7top1" class="news-card" type="button"> <p>The React Foundation : A <br>  New Home 
+                for Reacted Hosted By <br>  The Linux Foundation </p> February 24,2026 </button>
+                <button id="page7top2" class="news-card" type="button">  <p> Additional <br>  Vulnerabilities in <br>  RSC </p> December 11,2025  </button>
             </div>
-            <div id="page7box2topbox2">
-                <button id="page7bottom1"> <p> <br>Velnerability in <br> React Server <br> components</p> december 3,2025</button>
-                <button id="page7bottom2"> <p> React Conf 2025 <br> Recap</p> October 16,2025</button>
+            <div id="page7box2topbox2" class="news-row">
+                <button id="page7bottom1" class="news-card" type="button"> <p> <br> Velnerability in <br>  React Server <br>  components</p> december 3,2025</button>
+                <button id="page7bottom2" class="news-card" type="button"> <p> React Conf 2025 <br>  Recap</p> October 16,2025</button>
             </div>
         </div>
     </div>
 
-    <div id="page8">
+    <div id="page8" class="content-section">
         <div id="page8top">
             <h1 id="page8h1"> Join a community <br> of millions </h1>
-            <p id="page8ptext1">You’re not alone. Two million developers from all over the world visit the React <br> docs every month. React is something that people and teams can agree on.</p>
+            <p id="page8ptext1">You’re not alone. Two million developers from all over the world visit the React <br>  docs every month. React is something that people and teams can agree on.</p>
         </div>
         <div id="page8pics">
             <img src="./react_conf_elizabet.webp" alt="elizabet" width="301px" height="230px">
@@ -1072,58 +985,58 @@
             <img src="./react_india_team.webp" alt="team" width="301px" height="230px">
         </div>
 
-        <p id="page8ptext2">This is why React is more than a library, an architecture, or even an ecosystem. <br> React is a community. It’s a place where you can ask for help, find opportunities, <br> and meet new friends. You will meet both developers and designers, beginners <br> and experts, researchers and artists, teachers and students. Our backgrounds <br> may be very different, but React lets us all create user interfaces together.</p>
+        <p id="page8ptext2">This is why React is more than a library, an architecture, or even an ecosystem. <br>  React is a community. It’s a place where you can ask for help, find opportunities, <br>  and meet new friends. You will meet both developers and designers, beginners <br>  and experts, researchers and artists, teachers and students. Our backgrounds <br>  may be very different, but React lets us all create user interfaces together.</p>
     
         <div id="page8footerheader">
             <img id="page8footerlogo" src="./logo_light.svg" alt="logo" height="112px" width="112px">
             <h1 id="page8footerh1">Welcome to the <br> React community</h1>
-            <button id="page8footerbutton">Get Started</button>
+            <button id="page8footerbutton" class="pill-button" type="button">Get Started</button>
         </div>
 
         <div id="page8footer">
 
             <div id="page8buttonline1">
-                <button id="buttonheader">Meta Open Source</button>
-                <button>copyright Meta Platform, Inc</button>
-                <button>uwu?</button>
+                <button id="buttonheader" type="button">Meta Open Source</button>
+                <button type="button">copyright Meta Platform, Inc</button>
+                <button type="button">uwu?</button>
             </div>
 
             <div id="page8buttonline2">
-                <button id="buttonheader">Learn React</button>
-                <button>Quick Start</button>
-                <button>Installation</button>
-                <button>Describing the UI</button>
-                <button>Adding Interactivity</button>
-                <button>Managing State</button>
-                <button>Escape Hatches</button>
+                <button id="buttonheader-2" type="button">Learn React</button>
+                <button type="button">Quick Start</button>
+                <button type="button">Installation</button>
+                <button type="button">Describing the UI</button>
+                <button type="button">Adding Interactivity</button>
+                <button type="button">Managing State</button>
+                <button type="button">Escape Hatches</button>
             </div>
 
             <div id="page8buttonline3">
-                <button id="buttonheader">API Reference</button>
-                <button>React APIs</button>
-                <button>React DOM APIs</button>
+                <button id="buttonheader-3" type="button">API Reference</button>
+                <button type="button">React APIs</button>
+                <button type="button">React DOM APIs</button>
             </div>
 
             <div id="page8buttonline4">
-                <button id="buttonheader">Community</button>
-                <button>Code of conduct</button>
-                <button>Meet the teem</button>
-                <button>Docs Contributors</button>
-                <button>Acknowledgesment</button>
+                <button id="buttonheader-4" type="button">Community</button>
+                <button type="button">Code of conduct</button>
+                <button type="button">Meet the teem</button>
+                <button type="button">Docs Contributors</button>
+                <button type="button">Acknowledgesment</button>
             </div>
 
             <div id="page8buttonline5">
-                <button id="buttonheader">More</button>
-                <button>Blog</button>
-                <button>React Native</button>
-                <button>Privacy</button>
-                <button>Terms</button>
+                <button id="buttonheader-5" type="button">More</button>
+                <button type="button">Blog</button>
+                <button type="button">React Native</button>
+                <button type="button">Privacy</button>
+                <button type="button">Terms</button>
 
                 <div id="footericons">
-                    <img src="./facebook.png" alt="" width="20px" height="20px" >
-                    <img src="./twitter.png" alt="" width="20px" height="20px" >
-                    <img src="./butterfly.png" alt="" width="20px" height="20px" >
-                    <img src="./bili logo.png" alt="" width="20px" height="20px" >
+                    <img src="./facebook.png" alt="" width="20px" height="20px">
+                    <img src="./twitter.png" alt="" width="20px" height="20px">
+                    <img src="./butterfly.png" alt="" width="20px" height="20px">
+                    <img src="./bili%20logo.png" alt="" width="20px" height="20px">
                 </div>
 
 
@@ -1131,5 +1044,38 @@
 
         </div>
 
+</div>
+<script>
+(() => {
+  const header = document.getElementById('navbartop');
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('topbuttons');
+  const desktop = window.matchMedia('(min-width: 1120px)');
+  function setMenu(open) {
+    header.classList.toggle('is-menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  }
+  toggle.addEventListener('click', () => {
+    setMenu(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+  menu.addEventListener('click', event => {
+    if (event.target.closest('a')) setMenu(false);
+  });
+  document.addEventListener('click', event => {
+    if (!header.contains(event.target)) setMenu(false);
+  });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      setMenu(false);
+      toggle.focus();
+    }
+  });
+  header.addEventListener('focusout', event => {
+    if (!header.contains(event.relatedTarget)) setMenu(false);
+  });
+  desktop.addEventListener('change', () => setMenu(false));
+})();
+</script>
 </body>
 </html>
